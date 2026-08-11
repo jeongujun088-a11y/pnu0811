@@ -39,8 +39,16 @@
     <!-- Main Content -->
     <main class="max-w-5xl mx-auto px-4 md:px-6 py-8 -mt-8">
         
+        <!-- Video Section (Added as requested) -->
+        <section class="bg-white rounded-xl shadow-lg p-6 md:p-8 mb-8 relative z-10 border-t-4 border-gray-300 flex justify-center">
+             <video controls class="max-w-full rounded-lg shadow-md" style="max-height: 400px;">
+                <source src="data2.mp4" type="video/mp4">
+                브라우저가 동영상을 지원하지 않습니다.
+            </video>
+        </section>
+
         <!-- Section 1: Background -->
-        <section class="bg-white rounded-xl shadow-lg p-6 md:p-8 mb-8 relative z-10 border-t-4 border-blue-500">
+        <section class="bg-white rounded-xl shadow-lg p-6 md:p-8 mb-8">
             <h2 class="text-2xl font-bold text-gray-900 border-b border-gray-200 pb-3 mb-5">1. 분석 배경 및 목적</h2>
             <p class="text-gray-700 leading-relaxed mb-4">
                 기후 위기 대응을 위한 탄소 중립 정책의 일환으로 자전거가 주요 교통수단이자 보편적 레저 수단으로 정착함에 따라, 도로 위 자전거 이용 밀도는 전례 없이 높아지고 있습니다. 그러나 이러한 이용 활성화의 이면에는 안전 관리의 사각지대가 존재하며, 자전거 사고는 신체가 외부로 노출되는 특성상 인명 피해로 직결될 위험이 매우 큽니다.
