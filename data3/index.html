@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ko" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2025년 자전거 교통사고 통계 분석 및 정책 대응 전략 보고서</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Pretendard', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#2563eb',
+                        secondary: '#059669',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased">
+    <!-- Header -->
+    <header class="bg-slate-900 text-white py-16 px-4 shadow-lg">
+        <div class="max-w-4xl mx-auto text-center">
+            <span class="inline-block bg-blue-600 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider mb-4">KOTI 정책 보고서</span>
+            <h1 class="text-3xl md:text-4xl font-extrabold tracking-tight mb-4">2025년 자전거 교통사고 통계 분석 및 정책 대응 전략 보고서</h1>
+            <p class="text-slate-400 text-sm md:text-base">작성: 국가교통안전연구원(KOTI) 수석연구위원</p>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-4 py-10 space-y-12">
+        <!-- 1. 분석 배경 및 목적 -->
+        <section class="bg-white rounded-2xl shadow-sm p-8 border border-slate-100">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-3">
+                <span class="w-8 h-8 rounded-lg bg-blue-100 text-primary flex items-center justify-center text-sm font-bold">1</span>
+                분석 배경 및 목적
+            </h2>
+            <p class="text-slate-600 leading-relaxed mb-4">
+                기후 위기 대응을 위한 탄소 중립 정책의 일환으로 자전거가 주요 교통수단이자 보편적 레저 수단으로 정착함에 따라, 도로 위 자전거 이용 밀도는 전례 없이 높아지고 있습니다. 그러나 이러한 이용 활성화의 이면에는 안전 관리의 사각지대가 존재하며, 자전거 사고는 신체가 외부로 노출되는 특성상 인명 피해로 직결될 위험이 매우 큽니다.
+            </p>
+            <p class="text-slate-600 leading-relaxed mb-4">
+                본 보고서는 2025년 발생한 총 5,235건의 사고(사망 85명, 부상 5,655명) 데이터를 바탕으로, 사고 발생의 시공간적 패턴을 심층 분석합니다. 특히 시간대별·월별 데이터의 상관관계를 통해 도출된 통계적 근거를 바탕으로, 단순한 현상 파악을 넘어 실제 행정 현장에 적용 가능한 ‘선제적 안전 관리 체계’를 구축하는 데 정책적 목적이 있습니다.
+            </p>
+            <p class="text-slate-600 leading-relaxed">
+                전체적인 사고 규모를 확인한 후, 다음 섹션에서는 월별 변동 추이를 통해 사고 발생의 계절적 특성을 상세히 분석합니다.
+            </p>
+        </section>
+
+        <!-- 2. 월별 사고 발생 추이 -->
+        <section class="bg-white rounded-2xl shadow-sm p-8 border border-slate-100">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-3">
+                <span class="w-8 h-8 rounded-lg bg-blue-100 text-primary flex items-center justify-center text-sm font-bold">2</span>
+                월별 사고 발생 추이 및 계절적 변동성 분석
+            </h2>
+            <p class="text-slate-600 leading-relaxed mb-6">
+                자전거 사고는 기온 변화와 외부 활동량에 정비례하는 경향을 보입니다. 동절기에서 춘절기로 넘어가는 시점의 급격한 사고 증가세는 교통안전 정책의 자원 투입 시점을 결정하는 핵심 지표가 됩니다.
+            </p>
+
+            <!-- Table -->
+            <div class="overflow-x-auto mb-6">
+                <table class="w-full text-center border-collapse">
+                    <thead>
+                        <tr class="bg-slate-100 text-slate-700 text-sm">
+                            <th class="p-3 font-semibold rounded-l-lg">구분</th>
+                            <th class="p-3 font-semibold">1월</th>
+                            <th class="p-3 font-semibold">2월</th>
+                            <th class="p-3 font-semibold text-blue-600">3월</th>
+                            <th class="p-3 font-semibold">4월</th>
+                            <th class="p-3 font-semibold">5월</th>
+                            <th class="p-3 font-semibold text-red-600">6월</th>
+                            <th class="p-3 font-semibold">7월</th>
+                            <th class="p-3 font-semibold">8월</th>
+                            <th class="p-3 font-semibold">9월</th>
+                            <th class="p-3 font-semibold">10월</th>
+                            <th class="p-3 font-semibold">11월</th>
+                            <th class="p-3 font-semibold rounded-r-lg">12월</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-sm text-slate-600">
+                        <tr class="border-b border-slate-100">
+                            <td class="p-3 font-medium bg-slate-50">사고(건)</td>
+                            <td class="p-3">204</td>
+                            <td class="p-3">184</td>
+                            <td class="p-3 font-bold text-blue-600">362</td>
+                            <td class="p-3">507</td>
+                            <td class="p-3">549</td>
+                            <td class="p-3 font-bold text-red-600">605</td>
+                            <td class="p-3">577</td>
+                            <td class="p-3">558</td>
+                            <td class="p-3">556</td>
+                            <td class="p-3">447</td>
+                            <td class="p-3">413</td>
+                            <td class="p-3">273</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="space-y-4 text-slate-600">
+                <h3 class="font-bold text-slate-800">핵심 분석 결과:</h3>
+                <ul class="list-disc pl-5 space-y-2">
+                    <li><strong>해빙기 사고 전환점:</strong> 1~2월(평균 194건)의 저조한 수치는 기온이 상승하는 <strong>3월(362건)</strong>에 이르러 전월 대비 약 97% 급증하며 본격적인 사고 위험기에 진입합니다.</li>
+                    <li><strong>연중 최대 위험기:</strong> 사고 발생이 연중 최고치를 기록하는 달은 <strong>6월(605건)</strong>이며, 5월부터 9월까지는 매달 500건 이상의 사고가 지속적으로 발생하는 '고위험 구간'으로 확인되었습니다.</li>
+                </ul>
+                <div class="bg-blue-50 border-l-4 border-primary p-4 rounded-r-xl mt-4">
+                    <p class="font-semibold text-blue-900 mb-1"><i class="fa-solid fa-lightbulb mr-2"></i>전략적 시사점 (So What?)</p>
+                    <p class="text-sm text-blue-800">사고 발생 빈도가 집중되는 5~9월은 자전거 이용객의 '활동 임계치'가 가장 높은 시기입니다. 이 기간에는 지자체와 경찰청이 협력하여 주요 하천변 진입로 및 자전거 전용도로를 중심으로 집중 단속 인력을 배치하고, 현장 중심의 교통안전 캠페인을 집약적으로 전개해야 하는 행정적 당위성이 충분합니다.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. 시간대별 사고 집중도 -->
+        <section class="bg-white rounded-2xl shadow-sm p-8 border border-slate-100">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-3">
+                <span class="w-8 h-8 rounded-lg bg-blue-100 text-primary flex items-center justify-center text-sm font-bold">3</span>
+                시간대별 사고 집중도 및 위험 노출 분석
+            </h2>
+            <p class="text-slate-600 leading-relaxed mb-6">
+                도시의 활동 주기와 자전거 이용 패턴의 중첩은 특정 시간대의 사고 집중 현상을 야기합니다. 이는 인프라 개선 및 현장 안전 시설 보강의 핵심 근거가 됩니다.
+            </p>
+
+            <!-- Table -->
+            <div class="overflow-x-auto mb-6">
+                <table class="w-full text-center border-collapse">
+                    <thead>
+                        <tr class="bg-slate-100 text-slate-700 text-sm">
+                            <th class="p-3 font-semibold rounded-l-lg">순위</th>
+                            <th class="p-3 font-semibold">시간대</th>
+                            <th class="p-3 font-semibold">사고 건수</th>
+                            <th class="p-3 font-semibold rounded-r-lg">특이 사항</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-sm text-slate-600">
+                        <tr class="border-b border-slate-100">
+                            <td class="p-3 font-bold text-primary">1위</td>
+                            <td class="p-3 font-medium">16시~18시</td>
+                            <td class="p-3 font-bold">881건</td>
+                            <td class="p-3">주간 최다 발생 구간</td>
+                        </tr>
+                        <tr class="border-b border-slate-100">
+                            <td class="p-3 font-semibold">2위</td>
+                            <td class="p-3 font-medium">14시~16시</td>
+                            <td class="p-3">744건</td>
+                            <td class="p-3">레저 및 활동량 증가</td>
+                        </tr>
+                        <tr class="border-b border-slate-100">
+                            <td class="p-3 font-semibold">3위</td>
+                            <td class="p-3 font-medium">18시~20시</td>
+                            <td class="p-3">725건</td>
+                            <td class="p-3">퇴근 및 야간 전환기</td>
+                        </tr>
+                        <tr>
+                            <td class="p-3 font-semibold">4위</td>
+                            <td class="p-3 font-medium">08시~10시</td>
+                            <td class="p-3">705건</td>
+                            <td class="p-3">출근 시간대 집중</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="space-y-4 text-slate-600">
+                <p><strong>심층 분석 및 전략적 해석:</strong> 오후 14시부터 저녁 20시 사이의 6시간 동안 전체 사고의 약 45%가 집중되는 현상은 <strong>'이용자 그룹의 복합적 혼재'</strong>에서 기인합니다. 이 시간대에는 하교하는 학생, 퇴근하는 직장인, 본격적인 배달 업무에 투입되는 라이더, 그리고 레저 이용객이 도로 위에서 복잡하게 뒤섞이며 사고 위험도가 극대화됩니다.</p>
+                <div class="bg-blue-50 border-l-4 border-primary p-4 rounded-r-xl mt-4">
+                    <p class="font-semibold text-blue-900 mb-1"><i class="fa-solid fa-lightbulb mr-2"></i>전략적 시사점 (So What?)</p>
+                    <p class="text-sm text-blue-800">특히 일몰이 시작되는 18시~20시의 높은 사고 빈도는 시인성 확보의 중요성을 시사합니다. 따라서 주요 자전거 도로의 가로등 조도 개선과 더불어, 보행자와의 충돌 방지를 위한 자전거 전용도로 분리 시설(물리적 분리대) 확충이 시급한 정책적 과제로 판단됩니다.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. 사고 심각도 분석 -->
+        <section class="bg-white rounded-2xl shadow-sm p-8 border border-slate-100">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-3">
+                <span class="w-8 h-8 rounded-lg bg-blue-100 text-primary flex items-center justify-center text-sm font-bold">4</span>
+                사고 심각도 분석: 사망자 및 치사율의 역설
+            </h2>
+            <p class="text-slate-600 leading-relaxed mb-6">
+                정책 우선순위 결정에 있어 가장 중요한 것은 단순 사고 건수보다 '인명 피해의 심각도'입니다. 본 섹션에서는 사고 빈도와 실제 사망자 발생 사이의 불일치를 분석하여 치명적 사고의 원인을 식별합니다.
+            </p>
+
+            <!-- Table -->
+            <div class="overflow-x-auto mb-6">
+                <table class="w-full text-center border-collapse">
+                    <thead>
+                        <tr class="bg-slate-100 text-slate-700 text-sm">
+                            <th class="p-3 font-semibold rounded-l-lg">구분</th>
+                            <th class="p-3 font-semibold">사고 최다 구간 (16~18시)</th>
+                            <th class="p-3 font-semibold text-red-600">사망 최다 구간 (08~10시)</th>
+                            <th class="p-3 font-semibold rounded-r-lg">비고</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-sm text-slate-600">
+                        <tr class="border-b border-slate-100">
+                            <td class="p-3 font-medium bg-slate-50">사고 건수</td>
+                            <td class="p-3 font-bold">881건</td>
+                            <td class="p-3">705건</td>
+                            <td class="p-3">-</td>
+                        </tr>
+                        <tr class="border-b border-slate-100">
+                            <td class="p-3 font-medium bg-slate-50">사망자 수</td>
+                            <td class="p-3">5명</td>
+                            <td class="p-3 font-bold text-red-600">17명</td>
+                            <td class="p-3">3.4배 차이</td>
+                        </tr>
+                        <tr>
+                            <td class="p-3 font-medium bg-slate-50">치사율(%)</td>
+                            <td class="p-3">0.57%</td>
+                            <td class="p-3 font-bold text-red-600">2.41%</td>
+                            <td class="p-3">약 4.2배 위험</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="space-y-4 text-slate-600">
+                <h3 class="font-bold text-slate-800">심층 대조 분석:</h3>
+                <ul class="list-disc pl-5 space-y-2">
+                    <li><strong>치명률의 역설:</strong> 분석 결과, 사고가 가장 빈번한 오후 시간대보다 <strong>오전 08시~10시의 치사율(2.41%)</strong>이 압도적으로 높았습니다. 이는 오전 시간대 사고가 발생할 경우 사망으로 이어질 확률이 오후보다 <strong>4배 이상</strong> 높음을 의미합니다.</li>
+                    <li><strong>8월의 특이점:</strong> 월별 사망자 추이에서 <strong>8월(12명)</strong>은 사고 건수가 6월보다 적음에도 불구하고 가장 많은 사망자를 기록했습니다. 이는 <strong>여름철 폭염으로 인한 야간 라이딩 증가, 장마철 빗길 시야 미확보, 하계 휴가철 교통량 증가</strong> 등이 복합적으로 작용하여 사고의 치명도를 높인 것으로 추정됩니다.</li>
+                </ul>
+                <div class="bg-blue-50 border-l-4 border-primary p-4 rounded-r-xl mt-4">
+                    <p class="font-semibold text-blue-900 mb-1"><i class="fa-solid fa-lightbulb mr-2"></i>전략적 시사점 (So What?)</p>
+                    <p class="text-sm text-blue-800">오전 8시~10시 사이의 높은 치사율은 출근길 고속 주행과 더불어 물류 수송을 위한 <strong>대형 화물차량과의 혼재</strong> 가능성을 강력히 시사합니다. 대형 차량의 우회전 시 '사각지대(Blind Spot)'에 노출된 자전거는 치명적인 피해를 입기 쉬우므로, 이 시간대 자전거 우선도로의 안전 점검은 시민의 생명권 보호와 직결됩니다.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. 데이터 기반의 정책적 제언 및 결론 -->
+        <section class="bg-white rounded-2xl shadow-sm p-8 border border-slate-100">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-3">
+                <span class="w-8 h-8 rounded-lg bg-blue-100 text-primary flex items-center justify-center text-sm font-bold">5</span>
+                데이터 기반의 정책적 제언 및 결론
+            </h2>
+            <p class="text-slate-600 leading-relaxed mb-6">
+                본 연구위원은 2025년 자전거 사고 통계 분석을 바탕으로, 공공 안전 행정에 즉시 반영해야 할 세 가지 핵심 전략을 제언합니다.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                <div class="bg-slate-50 p-6 rounded-xl border border-slate-100">
+                    <div class="w-10 h-10 rounded-lg bg-blue-100 text-primary flex items-center justify-center font-bold mb-4">1</div>
+                    <h3 class="font-bold text-slate-900 mb-2">시공간 기반 타겟 단속 및 계도</h3>
+                    <p class="text-sm text-slate-600">사고가 집중되는 <strong>5~9월</strong> 및 <strong>14~20시</strong>를 '특별 안전 관리 기간'으로 설정합니다. 사고 다발 지역 순찰 강화 및 과속·안전모 미착용 현장 계도.</p>
+                </div>
+                <div class="bg-slate-50 p-6 rounded-xl border border-slate-100">
+                    <div class="w-10 h-10 rounded-lg bg-blue-100 text-primary flex items-center justify-center font-bold mb-4">2</div>
+                    <h3 class="font-bold text-slate-900 mb-2">고위험 시간대(오전) 맞춤형 인프라 보강</h3>
+                    <p class="text-sm text-slate-600">교차로 내 <strong>'코너 반경 축소(Corner Radii Reduction)'</strong> 유도. 대형 화물차 충돌 예방을 위한 측면 보호대 설치 의무화 및 우회전 사각지대 감지 센서 도입.</p>
+                </div>
+                <div class="bg-slate-50 p-6 rounded-xl border border-slate-100">
+                    <div class="w-10 h-10 rounded-lg bg-blue-100 text-primary flex items-center justify-center font-bold mb-4">3</div>
+                    <h3 class="font-bold text-slate-900 mb-2">뉴 모빌리티 반영 맞춤형 교육</h3>
+                    <p class="text-sm text-slate-600">전기자전거 및 개인형 이동장치(PM) 급증 추세를 반영한 <strong>'PM 및 전기자전거 안전 표준 가이드라인'</strong> 배포 및 8월 위험성 교육 반영.</p>
+                </div>
+            </div>
+
+            <div class="border-t border-slate-100 pt-6">
+                <h3 class="font-bold text-slate-900 mb-2">최종 결언</h3>
+                <p class="text-slate-600 leading-relaxed">
+                    2025년 자전거 사고 데이터는 자전거 이용이 활발한 계절과 시간대에 정책적 자원을 집중 투입해야 함을 명확히 보여줍니다. 본 보고서에서 제시한 데이터 기반의 인프라 개선과 정밀한 행정 대응이 실무에 반영되어, 예방 가능한 사고를 최소화하고 지속 가능한 안전 교통망이 구축되기를 기대합니다.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-8 mt-16 text-center text-sm">
+        <p>&copy; 2025 국가교통안전연구원(KOTI). All rights reserved.</p>
+    </footer>
+</body>
+</html>
